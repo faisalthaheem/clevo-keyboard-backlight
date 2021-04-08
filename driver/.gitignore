@@ -38,3 +38,4 @@ Module.symvers
 modules.order
 reload_driver.sh
 tuxedo-wmi.mod.c
+*.mod

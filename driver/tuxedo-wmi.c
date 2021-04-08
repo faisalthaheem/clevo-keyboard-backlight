@@ -960,81 +960,10 @@ static int __init tuxedo_dmi_matched(const struct dmi_system_id *id)
 
 static struct dmi_system_id __initdata tuxedo_dmi_table[] = {
 	{
-		.ident = "Clevo P370SM-A",
+		.ident = "Clevo NH5xAx",
 		.matches = {
 			DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "P370SM-A"),
-		},
-		.callback = tuxedo_dmi_matched,
-		.driver_data = &kb_full_color_ops,
-	},
-	{
-		.ident = "Clevo P17xSM-A",
-		.matches = {
-			DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "P17SM-A"),
-		},
-		.callback = tuxedo_dmi_matched,
-		.driver_data = &kb_full_color_ops,
-	},
-	{
-		.ident = "Clevo P15xSM-A/P15xSM1-A",
-		.matches = {
-			DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "P15SM-A/SM1-A"),
-		},
-		.callback = tuxedo_dmi_matched,
-		.driver_data = &kb_full_color_ops,
-	},
-	{
-		.ident = "Clevo P17xSM",
-		.matches = {
-			DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "P17SM"),
-		},
-		.callback = tuxedo_dmi_matched,
-		.driver_data = &kb_8_color_ops,
-	},
-	{
-		.ident = "Clevo P15xSM",
-		.matches = {
-			DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "P15SM"),
-		},
-		.callback = tuxedo_dmi_matched,
-		.driver_data = &kb_8_color_ops,
-	},
-	{
-		.ident = "Clevo P750ZM",
-		.matches = {
-			DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "P750ZM"),
-		},
-		.callback = tuxedo_dmi_matched,
-		.driver_data = &kb_full_color_ops,
-	},
-	{
-		.ident = "Hyperbook N8xxEP6",
-		.matches = {
-			DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "N8xxEP6"),
-		},
-		.callback = tuxedo_dmi_matched,
-		.driver_data = &kb_full_color_ops,
-	},
-	{
-		.ident = "Lambda TensorBook",
-		.matches = {
-      DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "P9XXEN_EF_ED"),
-    },
-		.callback = tuxedo_dmi_matched,
-		.driver_data = &kb_full_color_ops,
-	}
-		.ident = "Hyperbook N8xEJEK",
-		.matches = {
-			DMI_MATCH(DMI_SYS_VENDOR, "Notebook"),
-			DMI_MATCH(DMI_PRODUCT_NAME, "N8xEJEK"),
+			DMI_MATCH(DMI_PRODUCT_NAME, "NH5xAx"),
 		},
 		.callback = tuxedo_dmi_matched,
 		.driver_data = &kb_full_color_ops,
